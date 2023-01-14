@@ -10,6 +10,7 @@ matplotlib = "*"
 seaborn = "*"
 scikit-learn = "*"
 python-dotenv = "*"
+kaggle = "*"
 
 [dev-packages]
 nbdime = "*"
