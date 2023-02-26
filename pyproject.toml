@@ -2,7 +2,7 @@
 name = "kaggle-pipeline"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Ivan Dubrovin <ivan.dubrovin@proton.me>"]
 readme = "README.md"
 packages = [{include = "kaggle_pipeline"}]
 
