@@ -1,11 +1,11 @@
-project-name = $(notdir $(CURDIR))
+project-name = "project-alpha"
 
 default:
 	@echo "Current project: $(project-name)"
 
 data: data/raw/train.csv
 data/raw/train.csv:
-	kaggle competitions download -c $(subst kaggle-,,$(project-name)) -p data/raw
+	kaggle competitions download -c $(project-name) -p data/raw
 	unzip -d data/raw $$(find data/raw -name '*zip')
 
 setup-python:
