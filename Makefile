@@ -1,7 +1,11 @@
-project-name = "project-alpha"
+project-name = <NOT-SETUP-YET>
 
 default:
-	@echo "Current project: $(project-name)"
+	@echo "Project: $(project-name)\n"
+	@echo "Commands:"
+	@echo "  data: Fetch the dataset from Kaggle"
+	@echo "  setup-python: Setup environment and a Jupyter kernel"
+	@echo "  teardown-python: Remove the Jupyter kernel and the environment"
 
 data: data/raw/sample_submission.csv
 data/raw/sample_submission.csv:
