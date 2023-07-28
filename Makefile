@@ -18,6 +18,9 @@ setup-python:
 	 --name "$(project-name)" \
 	 --display-name "Kaggle: $(project-name)" \
 	 --env PYTHONPATH $$(pwd)
+	@echo '{"venvPath": "'$$(dirname $$(poetry env info --path))'",' \
+	 '"venv": "'$$(basename $$(poetry env info --path))'"}' \
+	 > pyrightconfig.json
 
 teardown-python:
 	jupyter kernelspec remove "$(project-name)" -y

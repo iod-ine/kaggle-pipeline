@@ -1,4 +1,5 @@
 .DS_Store
+pyrightconfig.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
