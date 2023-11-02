@@ -1,4 +1,8 @@
-project-name = <NOT-SETUP-YET>
+project-name = 
+
+ifndef project-name
+$(error Project name is not set!)
+endif
 
 default:
 	@echo "Project: $(project-name)\n"
