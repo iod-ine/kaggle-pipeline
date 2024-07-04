@@ -1,36 +1,31 @@
+[project]
+name = "kaggle-pipeline"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Ivan Dubrovin", email = "books.booksovich@yandex.com"},
+]
+dependencies = [
+    "numpy>=1.26.4",
+    "pandas>=2.2.2",
+    "matplotlib>=3.9.1",
+    "seaborn>=0.13.2",
+    "scikit-learn>=1.5.1",
+    "python-dotenv>=1.0.1",
+    "kaggle>=1.6.14",
+    "mlflow>=2.14.2",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "GPL-3.0-or-later"}
+
+
+[tool.pdm]
+distribution = false
+
 [tool.ruff]
 line-length = 88
 indent-width = 4
 
 [tool.ruff.lint]
 select = ["E", "F"]
-
-[tool.poetry]
-name = "kaggle-pipeline"
-version = "0.1.0"
-description = ""
-authors = ["Ivan Dubrovin <ivan.dubrovin@proton.me>"]
-readme = "README.md"
-packages = [{include = "kaggle_pipeline"}]
-
-[tool.poetry.dependencies]
-python = "^3.10"
-numpy = "^1.24.2"
-pandas = "^1.5.3"
-matplotlib = "^3.6.3"
-seaborn = "^0.12.2"
-scikit-learn = "^1.2.1"
-python-dotenv = "^0.21.1"
-kaggle = "^1.5.12"
-mlflow = "^2.4.1"
-
-[tool.poetry.group.dev.dependencies]
-nbdime = "^3.1.1"
-black = {extras = ["jupyter"], version = "^23.1.0"}
-isort = "^5.12.0"
-flake8 = "^6.0.0"
-ipykernel = "^6.22.0"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
